@@ -1,4 +1,234 @@
-*{
-    margin: 0;
-    padding: 0;
+@font-face {
+  font-family: General Sans;
+  src: url(General\ Sans\ Medium.otf);
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "General Sans";
+}
+body,html{
+  height: 100%;
+  width: 100%;
+}
+#main{
+  height: 100%;
+  width: 100%;
+}
+#hero-page{
+  width: 100%;
+  height: 100vh;
+  color: #fff;
+  background-color: black;
+}
+#hero-page .navbar{
+  width: 100%;
+  position: fixed;
+  padding: 2vw 3vw;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 1rem;
+  font-weight: 400;
+  background-color: black;
+  z-index: 88;
+}
+#hero-page .navbar h3:nth-child(2){
+  font-size: 1vw;
+}
+#hero-page .content{
+  opacity: .6;
+  text-transform: uppercase;
+  padding: 9vw 2.5vw;
+  font-weight: 700;
+}
+#hero-page .content .content-top{
+  font-size: 6.5vw;
+}
+#hero-page .content .content-bottom{
+  width: fit-content;
+  font-size: 6.5vw;
+  padding-left: 10.5vw;
+  line-height: 5vw;
+}
+#hero-page .content .content-bottom h6{
+  font-size: 1.2rem;
+  text-align: right;
+}
+#hero-page .footer {
+  width: 100%;
+  text-transform: uppercase;
+  position: absolute;
+  bottom: 0px;
+  font-weight: 200;
+  padding: 0 3vw;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+#hero-page .footer a{
+
+  color: #fff;
+  margin-right: 6vw;
+  font-weight: 200;
+  font-size: 1vw;
+  text-decoration: none;
+  font-weight: bold;
+}
+#hero-page .footer a i{
+  transform: rotate(-35deg);
+}
+#hero-page .footer h5:nth-child(2){
+  text-align: right;
+}
+#hero-page .footer .left{
+  padding-bottom: .7vw;
+  font-size: 1.2vw;
+  font-weight: 400;
+  line-height: 2rem;
+}
+#hero-page .footer .left .iconset{
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: .5rem;
+  text-align: right;
+  padding-top: .8vw;
+}
+
+#hero-page .footer .iconset i{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: black;
+  font-weight: 700;
+  font-size: 1vw;
+  height: 25px;
+  width: 25px;
+  border-radius: 50%;
+  background-color: #888;
+  transform: rotate(90deg);
+}
+#second-page{
+  /* height: 100vh; */
+  width: 100%;
+  background-color: black;
+  color: #fff;
+  padding: 11vw 4vw;
+  padding-right: 10vw;
+
+}
+#second-page .elem{
+  /* height: 20%; */
+  text-transform: uppercase;
+  border-bottom: 1px solid #888;
+  border-top: 1px solid #888;
+  display: flex;
+  align-items: center;
+  padding: 28px 0;
+  justify-content: space-between;
+}
+#second-page .elem h1{
+  font-size: 8vw;
+  opacity: .6;
+}
+#second-page .elem img{
+  display: none;
+  position: absolute;
+  height: 250px;
+}
+
+#third-page{
+  color: #fff;
+  background-color: black;
+  height: 100vh;
+  width: 100%;
+  padding: 9vw 7vw;
+  padding-right: 10vw;
+  position: relative;
+}
+#third-page .about{
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 5rem;
+  padding: 0 1vw;
+}
+#third-page .about img{
+  height: 250px;
+}
+#third-page .about .about-us{
+  width: 455px;
+}
+#third-page .about .about-us h4{
+  text-transform: uppercase;
+  opacity: .6;
+  font-size: .8rem;
+}
+#third-page .about .about-us p{
+  font-size: 1.2vw;
+  line-height: 26px;
+  padding-bottom: 2vw;
+}
+#third-page .about .about-us a{
+  padding: 5px 15px;
+  border: 1px solid #999;
+  border-radius: 20px;
+  text-decoration: none;
+  color: white;
+  transition: .7s ease;
+}
+#third-page .about .about-us a:hover{
+  background-color: #fff;
+  color: #000;
+}
+#third-page .third-footer{
+  position: absolute;
+  bottom: 12vh;
+  left: 5vh;
+  text-transform: uppercase;
+
+}
+#third-page .third-footer h5{
+  font-size: 14px;
+  opacity: .6;
+}
+#third-page .third-footer a{
+  text-decoration: none;
+  font-size: .9rem;
+  font-weight: bold;
+  line-height: 2.5rem;
+  color: white;
+}
+#third-page .third-footer a i{
+  transform: rotate(-35deg);
+  padding: 0 .9rem;
+}
+#third-page .page-footer{
+  width: 90%;
+  position: absolute;
+  bottom: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 -7vw;
+}
+#third-page .page-footer .left{
+  width: 20%;
+  font-weight: 700;
+
+}
+#third-page .page-footer .right{
+  width: 35%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+#third-page .page-footer .right a{
+  color: white;
+  text-decoration: none;
+  font-size: 1rem;
+  font-weight: bold;
+  text-transform: uppercase;
 }
