@@ -150,23 +150,27 @@ body,html{
 
 }
 #second-page .elem{
-  /* height: 20%; */
+  height: 200px;
   text-transform: uppercase;
   border-bottom: 1px solid #888;
   border-top: 1px solid #888;
   display: flex;
   align-items: center;
   padding: 28px 0;
+  position: relative;
   justify-content: space-between;
+  /* overflow: hidden; */
 }
 #second-page .elem h1{
   font-size: 8vw;
   opacity: .6;
 }
 #second-page .elem img{
-  display: none;
+  opacity: 0;
   position: absolute;
-  height: 250px;
+  top: 0px;
+  height: 300px;
+  z-index: 99;
 }
 
 #third-page{
